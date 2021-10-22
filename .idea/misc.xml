@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/tugas/Tugas kuliah semester 5/FormApps-1/app/src/main/res/drawable/rectangle.xml" value="0.20625" />
+        <entry key="..\:/tugas/Tugas kuliah semester 5/FormApps-1/app/src/main/res/layout/activity_dashboard.xml" value="0.5" />
         <entry key="..\:/tugas/Tugas kuliah semester 5/FormApps-1/app/src/main/res/layout/activity_main.xml" value="0.24456521739130435" />
+        <entry key="..\:/tugas/Tugas kuliah semester 5/FormApps-1/app/src/main/res/layout/activity_quiz.xml" value="0.33" />
       </map>
     </option>
   </component>
