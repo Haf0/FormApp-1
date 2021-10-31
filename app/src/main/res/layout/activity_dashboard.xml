@@ -56,23 +56,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Call 123"/>
+            android:text="@string/button_call"/>
         <Button
             android:id="@+id/btnQuiz"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Quiz"/>
-        <TextView
-            android:id="@+id/tvHasil"
-            android:layout_marginTop="20dp"
+            android:text="@string/button_quiz"/>
+        <Button
+            android:id="@+id/btnlang"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:text="@string/button__change_language"/>
+        <TextView
+            android:id="@+id/tvHasil"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:text="hasil Quiz"
-            android:textStyle="bold"
-            android:textSize="18dp"/>
+            android:text="@string/result"
+            android:textSize="@dimen/text_medium"/>
 
 
     </LinearLayout>

@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">FormApps</string>
+
+    <string name="header_form">Please fill form below!</string>
+    <string name="input_name_hint">Name</string>
+    <string name="input_email_hint">Email</string>
+    <string name="input_phone_hint">Phone number</string>
+    <string name="input_passw_hint">Password</string>
+    <string name="button_save_hint">Save</string>
+
+    <string name="button_call">Call *123#</string>
+    <string name="button_quiz">Quiz</string>
+    <string name="button__change_language">Change language</string>
+
+    <string name="question">January is the ... month</string>
+    <string name="answer_1">1st</string>
+    <string name="answer_3">3rd</string>
+    <string name="answer_10">10th</string>
+    <string name="answer_12">12nd</string>
+    <string name="button_quiz_submit">Submit</string>
+    <string name="result">Result</string>
+
+    <string name="wrong_answer">Your answer is wrong</string>
+    <string name="true_answer">Your answer is true</string>
 </resources>

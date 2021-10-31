@@ -5,16 +5,16 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:padding="13dp"
+    android:padding="@dimen/padding_small"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Silahkan Isi Form Berikut!"
-        android:textSize="30dp"
+        android:text="@string/header_form"
+        android:textSize="@dimen/text_large"
         android:gravity="center"
-        android:layout_marginBottom="20dp"/>
+        android:layout_margin="@dimen/margin_large"/>
 
     <EditText
         android:id="@+id/InputName"
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="Name" />
+        android:hint="@string/input_name_hint" />
 
     <EditText
         android:id="@+id/InputEmail"
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:hint="Email"/>
+        android:hint="@string/input_email_hint"/>
 
     <EditText
         android:id="@+id/InputPhone"
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="phone"
-        android:hint="Phone"/>
+        android:hint="@string/input_phone_hint"/>
 
     <EditText
         android:id="@+id/InputPassword"
@@ -46,15 +46,14 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword"
-        android:hint="Password"/>
+        android:hint="@string/input_passw_hint"/>
 
     <Button
         android:id="@+id/btnSave"
-        android:layout_width="150dp"
-        android:layout_gravity="center"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="save"
+        android:layout_margin="@dimen/margin_small"
+        android:text="@string/button_save_hint"
         />
 
 </LinearLayout>

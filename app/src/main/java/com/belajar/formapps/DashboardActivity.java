@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -39,6 +40,11 @@ public class DashboardActivity extends AppCompatActivity {
             Intent QuizIntent = new Intent(DashboardActivity.this, QuizActivity.class);
             resultLauncher.launch(QuizIntent);
         });
+        Button btnlang = (Button) findViewById(R.id.btnlang);
+        btnlang.setOnClickListener( v -> {
+            Intent LangIntent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
+            startActivity(LangIntent);
+        });
 
         TextView tvhasil = (TextView) findViewById(R.id.tvHasil);
         resultLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
@@ -46,9 +52,9 @@ public class DashboardActivity extends AppCompatActivity {
                     if(result.getResultCode() == QuizActivity.RESULT_CODE && result.getData() != null){
                         int answer = result.getData().getIntExtra(QuizActivity.EXTRA_ANSWER,0);
                         if(answer == 1 ){
-                            tvhasil.setText("Jawaban Benar");
+                            tvhasil.setText(getResources().getString(R.string.true_answer));
                         }
-                        else tvhasil.setText("Jawaban Salah");
+                        else tvhasil.setText(getResources().getString(R.string.wrong_answer));
                     }
 
                 });
